@@ -1,35 +1,21 @@
-const path = require('path'); // required from node for creating absolute file path
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+let path = require('path');
 
-const config = {
-	entry: './src/index.js', // relative file path
+module.exports = {
+	entry: './app/assets/scripts/App.js',
 	output: {
-		path: path.resolve(__dirname, 'build'), // must be an absolute file path; __dirname reference to current working directory
-		filename: 'bundle.js'
+		path: path.resolve(__dirname, './app/temp/scripts'), // requires absolute path, a relative path throws an error
+		filename: 'App.js'
 	},
 	module: {
-		rules: [
+		loaders: [
 			{
-				use: 'babel-loader',
-				test: /\.js$/
-			},
-			{
-				use: ExtractTextPlugin.extract({
-					use: 'css-loader'
-				}),
-				test: /\.css$/
-			},
-			{
-				use: ExtractTextPlugin.extract({
-					use: ['css-loader', 'sass-loader']
-				}),
-				test: /\.scss$/
+				loader: 'babel-loader',
+				query: {
+					presets: ['es2015']
+				},
+				test: /\.js$/,
+				exclude: /node_modules/
 			}
 		]
-	},
-	plugins: [
-		new ExtractTextPlugin('style.css')
-	]
-};
-
-module.exports = config;
+	}
+}
