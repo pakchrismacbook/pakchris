@@ -10,10 +10,16 @@
 			font-family: 'Roboto', sans-serif;
 			line-height:1.3rem;
 			padding:.5rem 0;
+			color:rgb(210,210,210);
 		}
 	}
 	&__title{
 		font-family: 'Open Sans', sans-serif;
-		font-size:1.75rem; line-height:3rem; letter-spacing:1.5px;
+		font-size:1.65rem; line-height:3rem; letter-spacing:1.25px;
+	}
+	&__subtitle{
+		font-family: 'Open Sans', sans-serif; font-weight:400;
+		font-size:1.3rem; line-height:2rem;
+		color:rgb(210,210,210);
 	}
 }
