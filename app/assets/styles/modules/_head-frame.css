@@ -1,37 +1,96 @@
-// @media(min-width:415px){}
-
 .head-frame{
-	width:100%; height:150vw;
+	width:100%; height:100vh;
 	position:relative;
-	background-image:url(../../assets/images/head-sm.jpg);
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:top;
-	background-attachment:fixed;
-	/*background-color:gainsboro;*/
+
+	&__title{
+		position:absolute; left:.25rem;
+		font-family: 'Open Sans', sans-serif;
+		font-size:2.25rem;
+		color:$mainWhite;
+	}
+	&__title.first{
+		bottom:calc(50% + 2.25rem);
+	}
+	&__title.first::before{content:'Christopher';}
+	&__title.second{
+		bottom:50vh;
+	}
+
+	&__subtitle{
+		position:absolute;
+		font-family: 'Open Sans', sans-serif;
+		font-size:1.6rem;
+		right:.25rem;
+		color:$mainBlack;
+	}
+	&__subtitle.first{
+		top:50%;
+	}
+	&__subtitle.second{
+		top:calc(50% + 1.6rem);
+	}
+
+	&__bg-block{
+		width:100%; height:50vh;
+		position:absolute; left:0;
+		z-index:-1;
+	}
+	&__bg-block.black{
+		top:0;
+		background-color:$mainBlack;
+	}
+	&__bg-block.white{
+		bottom:0;
+		background-color:$mainWhite;
+	}
 
 	@media(min-width:415px){
-		width:100%; height:100vh;
-		/*background-color:lightskyblue;*/
-	}
 
-	&__text-content{
-		font-family: 'Special Elite', cursive;
-		position:absolute; top:50%; left:0;
-		width:100%;
-		/*background-color:rgba(10,10,10,.35);*/
-		padding:15px 0;
-		transform:translateY(-50%);
-		text-align:center;
-		color:rgb(75,90,175);
-		/*text-shadow:2.3px -1.7px 0px white;*/
-	}
-	&__title{
-		font-size:2.25rem;
-		line-height:3.5rem;
-	}
-	&__subtitle{
-		font-size:1.5rem;
+		&__title{
+			left:auto;
+			font-size:5rem;
+			top:50%; transform:translateY(-50%);
+		}
+		&__title.first{
+			color:$mainWhite;
+			right:50.7%;
+			bottom:auto;
+		}
+		&__title.first::before{content:'Chris';}
+		&__title.second{
+			color:$mainBlack;
+			left:50.1%;
+			bottom:auto;
+		}
+
+		&__subtitle{
+			right:auto;
+			font-size:2rem;
+			top:auto; bottom:25%; transform:translateY(25%);
+		}
+		&__subtitle.first{
+			color:$mainWhite;
+			right:50.3%;
+			top:auto;
+		}
+		&__subtitle.second{
+			color:$mainBlack;
+			left:50.3%;
+			top:auto;
+		}
+
+		&__bg-block{
+			width:50%; height:100vh;
+			top:0;
+		}
+		&__bg-block.black{
+			left:0;
+			background-color:$mainBlack;
+		}
+		&__bg-block.white{
+			right:0;
+			background-color:$mainWhite;
+		}
 	}
 
 }

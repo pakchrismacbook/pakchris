@@ -4,7 +4,7 @@
 	padding:3.5rem 1.5rem;
 }
 
-@media(min-width:415px){}
+// @media(min-width:415px){}
 
 .main-frame{
 	position:relative;
@@ -12,50 +12,108 @@
 	/*height:500vh;*/
 }
 
-// @media(min-width:415px){}
-
 .head-frame{
-	width:100%; height:150vw;
+	width:100%; height:100vh;
 	position:relative;
-	background-image:url(../../assets/images/head-sm.jpg);
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:top;
-	background-attachment:fixed;
 
 }
-
-/*background-color:gainsboro;*/
-
-@media(min-width:415px){
-
-.head-frame{
-		width:100%; height:100vh
-		/*background-color:lightskyblue;*/
-
-}
-	}
-
-.head-frame__text-content{
-		font-family: 'Special Elite', cursive;
-		position:absolute; top:50%; left:0;
-		width:100%;
-		/*background-color:rgba(10,10,10,.35);*/
-		padding:15px 0;
-		-webkit-transform:translateY(-50%);
-		        transform:translateY(-50%);
-		text-align:center;
-		color:rgb(75,90,175);
-		/*text-shadow:2.3px -1.7px 0px white;*/
-	}
 
 .head-frame__title{
+		position:absolute; left:.25rem;
+		font-family: 'Open Sans', sans-serif;
 		font-size:2.25rem;
-		line-height:3.5rem;
+		color:rgb(235,235,240);
+	}
+
+.head-frame__title.first{
+		bottom:calc(50% + 2.25rem);
+	}
+
+.head-frame__title.first::before{content:'Christopher';}
+
+.head-frame__title.second{
+		bottom:50vh;
 	}
 
 .head-frame__subtitle{
-		font-size:1.5rem;
+		position:absolute;
+		font-family: 'Open Sans', sans-serif;
+		font-size:1.6rem;
+		right:.25rem;
+		color:rgb(60,60,60);
+	}
+
+.head-frame__subtitle.first{
+		top:50%;
+	}
+
+.head-frame__subtitle.second{
+		top:calc(50% + 1.6rem);
+	}
+
+.head-frame__bg-block{
+		width:100%; height:50vh;
+		position:absolute; left:0;
+		z-index:-1;
+	}
+
+.head-frame__bg-block.black{
+		top:0;
+		background-color:rgb(60,60,60);
+	}
+
+.head-frame__bg-block.white{
+		bottom:0;
+		background-color:rgb(235,235,240);
+	}
+
+@media(min-width:415px){
+
+		.head-frame__title{
+			left:auto;
+			font-size:5rem;
+			top:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);
+		}
+		.head-frame__title.first{
+			color:rgb(235,235,240);
+			right:50.7%;
+			bottom:auto;
+		}
+		.head-frame__title.first::before{content:'Chris';}
+		.head-frame__title.second{
+			color:rgb(60,60,60);
+			left:50.1%;
+			bottom:auto;
+		}
+
+		.head-frame__subtitle{
+			right:auto;
+			font-size:2rem;
+			top:auto; bottom:25%; -webkit-transform:translateY(25%); transform:translateY(25%);
+		}
+		.head-frame__subtitle.first{
+			color:rgb(235,235,240);
+			right:50.3%;
+			top:auto;
+		}
+		.head-frame__subtitle.second{
+			color:rgb(60,60,60);
+			left:50.3%;
+			top:auto;
+		}
+
+		.head-frame__bg-block{
+			width:50%; height:100vh;
+			top:0;
+		}
+		.head-frame__bg-block.black{
+			left:0;
+			background-color:rgb(60,60,60);
+		}
+		.head-frame__bg-block.white{
+			right:0;
+			background-color:rgb(235,235,240);
+		}
 	}
 
 .skills-frame{
