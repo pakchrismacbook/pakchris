@@ -53,7 +53,7 @@
 		}
 		&__title.first{
 			color:$mainWhite;
-			right:50.7%;
+			right:50.5%;
 			bottom:auto;
 		}
 		&__title.first::before{content:'Chris';}

@@ -1,9 +1,5 @@
 *{ margin:0; padding:0; -webkit-box-sizing:border-box; box-sizing:border-box; }
 
-.content-wrap{
-	padding:3.5rem 1.5rem;
-}
-
 // @media(min-width:415px){}
 
 .main-frame{
@@ -76,7 +72,7 @@
 		}
 		.head-frame__title.first{
 			color:rgb(235,235,240);
-			right:50.7%;
+			right:50.5%;
 			bottom:auto;
 		}
 		.head-frame__title.first::before{content:'Chris';}
@@ -118,28 +114,23 @@
 
 .skills-frame{
 	width:100%;
-	background-color:darkslategrey;
-	color:azure;
+	background-color:rgb(190,205,215);
+	color:rgb(60,60,60);
 }
-
-.skills-frame__skill-section{
-		padding:1.25rem 0;
-	}
-
-.skills-frame__skill-section__text{
-			font-family: 'Roboto', sans-serif;
-			line-height:1.3rem;
-			padding:.5rem 0;
-			color:rgb(210,210,210);
-		}
 
 .skills-frame__title{
 		font-family: 'Open Sans', sans-serif;
-		font-size:1.65rem; line-height:3rem; letter-spacing:1.25px;
+		font-size:1.65rem; line-height:3rem;
 	}
 
 .skills-frame__subtitle{
 		font-family: 'Open Sans', sans-serif; font-weight:400;
 		font-size:1.3rem; line-height:2rem;
-		color:rgb(210,210,210);
 	}
+
+.skills-frame__text{
+		font-family: 'Roboto', sans-serif;
+		line-height:1.32rem;
+	}
+
+.skills-frame__skill-section{}
