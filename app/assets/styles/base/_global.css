@@ -1,9 +1,18 @@
 *{ margin:0; padding:0; box-sizing:border-box; }
 
+/*font-family: 'Roboto Mono', monospace;*/
+
 $mainWhite:rgb(235,235,240);
+$mainGrey:rgb(150,150,150);
 $mainBlack:rgb(60,60,60);
-$testColor:rgb(190,205,215);
+$mainKhaki:rgb(230,220,195);
 
+/*$testColor:rgb(80,130,165);*/
+$mainBlue_dark:rgb(55,105,140);
+$mainKhaki_dark:rgb(170,160,135);
+/*$testColor:rgb(190,205,215);*/
 
+p{font-family: 'Roboto', sans-serif;}
+img{min-width:100%;}
 
 // @media(min-width:415px){}

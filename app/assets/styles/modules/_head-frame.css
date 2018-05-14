@@ -3,7 +3,7 @@
 	position:relative;
 
 	&__title{
-		position:absolute; left:.25rem;
+		position:absolute; left:.35rem;
 		font-family: 'Open Sans', sans-serif;
 		font-size:2.25rem;
 		color:$mainWhite;
@@ -20,7 +20,7 @@
 		position:absolute;
 		font-family: 'Open Sans', sans-serif;
 		font-size:1.6rem;
-		right:.25rem;
+		right:.35rem;
 		color:$mainBlack;
 	}
 	&__subtitle.first{
@@ -38,10 +38,14 @@
 	&__bg-block.black{
 		top:0;
 		background-color:$mainBlack;
+		background-image:url(../../assets/images/head_dark-bg-sm.png);
+		background-size:cover;
 	}
 	&__bg-block.white{
 		bottom:0;
 		background-color:$mainWhite;
+		background-image:url(../../assets/images/head_light-bg-sm.png);
+		background-size:cover;
 	}
 
 	@media(min-width:415px){

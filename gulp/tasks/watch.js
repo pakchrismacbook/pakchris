@@ -9,7 +9,8 @@ gulp.task('watch', ()=>{
 		notify: false,
 		server: {
 			baseDir: 'app'
-		}
+		},
+		browser: "google chrome"
 	});
 	watch('./app/index.html', ()=>{
 		browserSync.reload();

@@ -1,20 +1,42 @@
 .skills-frame{
 	width:100%;
-	background-color:$testColor;
-	color:$mainBlack;
+	position:relative;
+	/*background-color:$mainBlue_dark;*/
+	background-image:url(../../assets/images/bg.png);
+	background-attachment:fixed;
+	color:$mainKhaki_dark;
+	overflow:hidden;
 
-	&__title{
+
+	&__intro-text{
+		font-size:1.3rem; line-height:1.7rem;
+		padding:2rem 1rem 1rem 1rem;
+
+	}
+
+	&__skills-section-main{
+		margin:0 1rem;
+		width:calc(100vw - 2rem);
+
+		&__section{
+			width:calc(33vw - .66rem); height:calc(33vw - .66rem); float:left;
+
+			&.html5{background-image:url(../../assets/images/logo_html5.png);background-size:80px; background-position:center;background-repeat:no-repeat;}
+			&.css3{background-image:url(../../assets/images/logo_css3.png);background-size:80px; background-position:center;background-repeat:no-repeat;}
+			&.js{background-image:url(../../assets/images/logo_js.png);background-size:70px; background-position:center;background-repeat:no-repeat;}
+
+			& h3{
+				font-family: 'Open Sans', sans-serif; font-weight:800;
+				color:$mainBlack;
+				text-align:center;
+				padding-top:calc((33vw - .66rem) - 1.5rem);
+			}
+		}
+	}
+
+	&__header-text{
 		font-family: 'Open Sans', sans-serif;
-		font-size:1.65rem; line-height:3rem;
-	}
-	&__subtitle{
-		font-family: 'Open Sans', sans-serif; font-weight:400;
-		font-size:1.3rem; line-height:2rem;
-	}
-	&__text{
-		font-family: 'Roboto', sans-serif;
-		line-height:1.32rem;
 	}
 
-	&__skill-section{}
+
 }
