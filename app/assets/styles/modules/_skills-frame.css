@@ -1,42 +1,20 @@
 .skills-frame{
-	width:100%;
-	position:relative;
-	/*background-color:$mainBlue_dark;*/
-	background-image:url(../../assets/images/bg.png);
-	background-attachment:fixed;
-	color:$mainKhaki_dark;
-	overflow:hidden;
+  position:relative;
 
+  &__skill-section{
 
-	&__intro-text{
-		font-size:1.3rem; line-height:1.7rem;
-		padding:2rem 1rem 1rem 1rem;
+    &__skill-logo{
+      position:relative;
+      width:150px; height:150px;
+      background-color:rgb(0,0,0);
+      border-radius:50%;
+      margin:0 auto;
 
-	}
-
-	&__skills-section-main{
-		margin:0 1rem;
-		width:calc(100vw - 2rem);
-
-		&__section{
-			width:calc(33vw - .66rem); height:calc(33vw - .66rem); float:left;
-
-			&.html5{background-image:url(../../assets/images/logo_html5.png);background-size:80px; background-position:center;background-repeat:no-repeat;}
-			&.css3{background-image:url(../../assets/images/logo_css3.png);background-size:80px; background-position:center;background-repeat:no-repeat;}
-			&.js{background-image:url(../../assets/images/logo_js.png);background-size:70px; background-position:center;background-repeat:no-repeat;}
-
-			& h3{
-				font-family: 'Open Sans', sans-serif; font-weight:800;
-				color:$mainBlack;
-				text-align:center;
-				padding-top:calc((33vw - .66rem) - 1.5rem);
-			}
-		}
-	}
-
-	&__header-text{
-		font-family: 'Open Sans', sans-serif;
-	}
-
-
+      img{
+        height:90px;
+        position:absolute; top:50%; left:50%;
+        transform:translate(-50%,-50%);
+      }
+    }
+  }
 }

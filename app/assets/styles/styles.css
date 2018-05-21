@@ -1,9 +1,5 @@
 
-@import 'base/_global';
+@import 'base/_base';
 
 @import 'modules/_main-frame';
-@import 'modules/_nav-frame';
-@import 'modules/_head-frame';
 @import 'modules/_skills-frame';
-@import 'modules/_projects-frame';
-@import 'modules/_footer-frame';
