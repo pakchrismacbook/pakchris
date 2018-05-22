@@ -1,31 +1,77 @@
 *{ margin:0; padding:0; -webkit-box-sizing:border-box; box-sizing:border-box; }
-
+body h1,body h2,body h3,body h4,body h5,body h6{
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+  }
+body p{font-family: 'Roboto Slab', serif;}
 .main-frame{ position:relative; width:100%; }
-
 .skills-frame{
   position:relative;
+  width:100%;
 }
-
 .skills-frame__skill-section{
-    text-align:center;
+    padding:2rem 1.5rem;
   }
-
+.skills-frame__skill-section:first-child{padding-top:4rem;}
 .skills-frame__skill-section__skill-logo{
       position:relative;
       width:140px; height:140px;
       background-color:rgb(85, 115, 175);
-      border:7px solid rgb(230, 180, 190);
+      border:5px solid rgb(230, 180, 190);
       border-radius:50%;
-      margin:1.5rem auto;
+      margin:0 auto;
     }
-
 .skills-frame__skill-section__skill-logo img{
-        height:80px;
+        height:75px;
         position:absolute; top:50%; left:50%;
         -webkit-transform:translate(-50%,-50%);
                 transform:translate(-50%,-50%);
       }
-
-.skills-frame__skill-section__text{
-      text-align:left;
+.skills-frame__skill-section__text h3{ text-align:center; font-size:2.25rem; padding:1rem; }
+.skills-frame__skill-section__text p{
+        text-align:left;
+        font-size:1rem;
+        /* line-height:1.5rem; */
+        padding:0 0 .5rem 0;
+      }
+.skills-frame__tools-section{
+    padding:2rem 1.5rem 4rem 1.5rem;
+  }
+.skills-frame__tools-section h3{ text-align:center; font-size:2.25rem; padding:1rem; }
+.skills-frame__tools-section__tool-block{
+      width:calc(33.2vw - 1rem);
+      display:inline-block;
+      // background-color:silver;
+      float:left;
     }
+.skills-frame__tools-section__tool-block__logo{
+        position:relative;
+        width:100%; height:calc(33.2vw - 1rem);
+      }
+.skills-frame__tools-section__tool-block__logo img{
+          position:absolute; top:50%; left:50%;
+          -webkit-transform:translate(-50%,-50%);
+                  transform:translate(-50%,-50%);
+          height:calc(22vw - 1rem);
+        }
+.skills-frame__tools-section::after{ clear:both; content:''; display:table; }
+.projects-frame{
+  position:relative;
+  width:100%;
+}
+.projects-frame__project-section{
+    position:relative;
+    margin:2rem 0; padding:0 1.5rem;
+    // background-image:url(../../assets/images/projects-frame/piggame/piggame_mobile_desktop-view.jpg);
+    // background-size:cover; background-position:center;
+  }
+.projects-frame__project-section__image-box .desktop-shot{width:100%;}
+.projects-frame__project-section__image-box .mobile-shot{
+        height:300px;
+        position:relative; left:50%;
+        -webkit-transform:translateX(-50%);
+                transform:translateX(-50%);
+      }
+.projects-frame__project-section__text-box h3{font-size:2.25rem; padding:.75rem 0;}
+.projects-frame__project-section__text-box p{padding:.5rem 0;}
+.projects-frame__project-section // $::after{clear:both; content:''; display:table;}

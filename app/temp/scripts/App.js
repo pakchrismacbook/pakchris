@@ -70,10 +70,5 @@
 "use strict";
 
 
-document.querySelector('.nav-frame').addEventListener('click', function () {
-	document.querySelector('.nav-frame__text-content').classList.toggle('nav-text-hide');
-	document.querySelector('.menu__content').classList.toggle('content-show');
-});
-
 /***/ })
 /******/ ]);

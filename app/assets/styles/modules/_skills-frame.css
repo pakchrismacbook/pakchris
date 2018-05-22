@@ -1,27 +1,64 @@
 .skills-frame{
   position:relative;
+  width:100%;
 
   &__skill-section{
-    text-align:center;
+    padding:2rem 1.5rem;
+
+    &:first-child{padding-top:4rem;}
 
     &__skill-logo{
       position:relative;
       width:140px; height:140px;
-      background-color:rgb(85, 115, 175);
-      border:7px solid rgb(230, 180, 190);
+      background-color:$mid-blue;
+      border:5px solid $mid-pink;
       border-radius:50%;
-      margin:1.5rem auto;
+      margin:0 auto;
 
 
       img{
-        height:80px;
+        height:75px;
         position:absolute; top:50%; left:50%;
         transform:translate(-50%,-50%);
       }
     }
 
     &__text{
-      text-align:left;
+
+      h3{ text-align:center; font-size:2.25rem; padding:1rem; }
+
+      p{
+        text-align:left;
+        font-size:1rem;
+        /* line-height:1.5rem; */
+        padding:0 0 .5rem 0;
+      }
     }
+  }
+
+  &__tools-section{
+    padding:2rem 1.5rem 4rem 1.5rem;
+
+    h3{ text-align:center; font-size:2.25rem; padding:1rem; }
+
+    &__tool-block{
+      width:calc(33.2vw - 1rem);
+      display:inline-block;
+      // background-color:silver;
+      float:left;
+
+      &__logo{
+        position:relative;
+        width:100%; height:calc(33.2vw - 1rem);
+
+        img{
+          position:absolute; top:50%; left:50%;
+          transform:translate(-50%,-50%);
+          height:calc(22vw - 1rem);
+        }
+      }
+    }
+
+    &::after{ clear:both; content:''; display:table; }
   }
 }
